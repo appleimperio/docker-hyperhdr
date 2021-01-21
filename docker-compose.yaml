@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  hyper-hdr:
+    container_name: hyper-hdr
+    hostname: hyper-hdr
+    image: nocturno/hyper-hdr:armv7
+    privileged: true
+    ports:
+      - "8090:8090"
+      - "19445:19445"
+      - "19444:19444"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /home/pi/.hyperion:/config
+    restart: unless-stopped
