@@ -1,3 +1,0 @@
-exec \
-	s6-setuidgid abc /usr/bin/hyperiond \
-	-u=/config
