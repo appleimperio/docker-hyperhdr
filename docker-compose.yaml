@@ -9,7 +9,9 @@ services:
       - /dev/video0:/dev/video0
     environment:
       - TZ=America/New_York
+      - PGID=1000
+      - PUID=1000
 
     volumes:
-      - /home/pi/containersdata/hyperhdr:/root/.hyperhdr
+      - /home/pi/containersdata/hyperhdr:/config
     restart: unless-stopped
