@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# set umask
+UMASK_SET=${UMASK_SET:-022}
+umask "$UMASK_SET"
+
+exec \
+	s6-setuidgid abc /usr/bin/hyperhdr \
+	-u=/config
