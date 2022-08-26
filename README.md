@@ -1,6 +1,6 @@
 # docker-hyperhdr
 
-This is HyperHDR v18.0.0 for Linux AARCH64 thanks to the developer Awawa https://github.com/awawa-dev/HyperHDR
+This is HyperHDR v18.0.0 for Linux arm64 and armv7 thanks to the developer Awawa https://github.com/awawa-dev/HyperHDR
 
 To pull the image use: docker pull nocturno/hyper-hdr:latest
 
