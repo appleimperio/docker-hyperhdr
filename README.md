@@ -11,7 +11,8 @@ docker run -d \
 --name=hyperhdr \
 --net=host \
 --device=/PATH TO YOUR VIDEO DEVICE usually /dev/video0:/dev/video0 \
---user $(id -u):$(id -g) \
+-e PUID=1000 \
+-e PGID=1000 \
 -e TZ=America/New_York \
 -v /LOCAL PATH ON YOUR COMPUTER:/config \
 --restart=unless-stopped \
