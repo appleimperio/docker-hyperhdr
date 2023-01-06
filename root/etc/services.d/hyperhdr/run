@@ -5,5 +5,5 @@ UMASK_SET=${UMASK_SET:-022}
 umask "$UMASK_SET"
 
 exec \
-	s6-setuidgid abc /usr/bin/hyperhdr \
+        hyperhdr \
 	-u=/config
