@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:focal
+FROM lsiobase/ubuntu:jammy
 
 ARG DEBIAN_FRONTEND="noninteractive"
 ARG HYPERHDR_URL="https://github.com/awawa-dev/HyperHDR/releases/download"
