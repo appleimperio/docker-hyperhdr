@@ -24,4 +24,5 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 8090 8092 19400 19444 19445
+RUN chmod +x /etc/services.d/*/run
 VOLUME /config
